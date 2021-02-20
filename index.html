@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/c.css">
+  </head>
+  <body>
+  <div class="window">
+    <div id="left">
+      <div class="menu">
+        <button id="homepage_btn">
+          <img src="./img/首页.png">
+          <p>首页</p>
+        </button>
+      </div>
+      <div class="menu">
+        <button id="game_btn">
+          <img src="./img/游戏.png">
+          <p>游戏</p>
+        </button>
+      </div>
+      <div class="menu">
+        <button id="stock_btn">
+          <img src="./img/库存.png">
+          <p>宝库</p>
+        </button>
+      </div>
+      <div class="menu">
+        <button id="upgrade_btn">
+          <img src="./img/升级.png">
+          <p>升级</p>
+        </button>
+      </div>
+      <div class="menu">
+        <button id="uninstall_btn">
+          <img src="./img/删除.png">
+          <p>卸载</p>
+        </button> 
+      </div>
+    </div>
+    <div id="top">
+      <div id="top_fush">
+        <button><img src="./img/新东方-刷新图标.png"></button>
+      </div>
+      <div id="Searchfor">
+        <div>
+          <input type="text" placeholder="请输入你想要搜索的内容">
+          <button type="submit" id = "Searchfor_btn"><img src="./img/搜索-xsy-2.png"></button>
+        </div>
+        <div id="Searchfor_history">
+          <div>qq</div>
+          <div>百度云盘</div>
+          <div>优酷</div>
+          <div>迅雷</div>
+          <div>qq音乐</div>
+        </div>
+      </div>
+      <div id="top_exit"><button>X</button></div>
+      <div id="top_reduce"><button>-</button></div>
+      <div id="top_menu"><button><img src="./img/菜单.png"></button></div>
+    </div>
+    <div id="main">
+      <div id ="main_homepage">
+    <div id="middle">
+      <div id="middle_top">
+        <div><button id="middle_btn_1">必备推荐</button></div>
+        <div><button id="middle_btn_2">榜单排行</button></div>
+      </div>
+      <div id="middle_bottom">
+        <div id="middle_bottom_1">
+          <div id="middle_bottom_left">
+            <div id="middle_bottom_left_1"></div>
+            <div id="middle_bottom_left_2"></div>
+            <div id="middle_bottom_left_3"></div>
+            <div id="middle_bottom_left_4"></div>
+          </div>
+          <div id="middle_bottom_right">
+            <div><button id="middle_bottom_right_btn_1">一</button></div>
+            <div><button id="middle_bottom_right_btn_2">二</button></div>
+            <div><button id="middle_bottom_right_btn_3">三</button></div>
+            <div><button id="middle_bottom_right_btn_4">四</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div id="right_top">累计下载</div>
+      <div id="right_middle">
+        <div>!!!今日开服!!!</div>
+        <div>!!!本周最热!!!</div>
+      </div>
+      <div id="right_bottom">
+        <div id="right_bottom_1">
+          <a href="https://www.baidu.com">百度一下</a>
+        </div>
+        <div id="right_bottom_2">
+          <a href="https://www.4399.com">4399小游戏</a>
+        </div>
+        <div id="right_bottom_3">
+          <a href="https://www.7k7k.com">7k7k小游戏</a>
+        </div>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="bottom_top">
+        <div id="bottom_top_left">
+          <div><p><button id="bottom_top_left_menu_1">上网必备</button></p></div>
+          <div><p><button id="bottom_top_left_menu_2">游戏必备</button></p></div>
+          <div><p><button id="bottom_top_left_menu_3">影音必备</button></p></div>
+          <div><p><button id="bottom_top_left_menu_4">手游PC版</button></p></div>
+          <div><p><button id="bottom_top_left_menu_5">办公必备</button></p></div>
+          <div><p><button id="bottom_top_left_menu_6">热门页游</button></p></div>
+          <div><p><button id="bottom_top_left_menu_7">系统必备</button></p></div>
+          <div><p><button id="bottom_top_left_menu_8">微信小游戏</button></p></div>
+        </div>
+        <div id="bottom_top_right">
+          <img src="./img/下载.png">
+          下载排行
+        </div>
+      </div>
+      <div id="bottom_bottom">
+        <div id="bottom_bottom_left">
+        <div id="bottom_bottom_left_0">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">
+                <span>植物大战僵尸</span>
+                <img id="img_1" src="" alt="">
+              </div>
+              <div class="line_1_1_copy">
+                <h6 id="name_1"></h6>
+                <P id ="synopsis_1"></P>
+                <button id = "install">安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6 id="name_2"></h6>
+                  <P id="synopsis_2"></P>
+                  <button id = "install2">安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6 id ="name_3" ></h6>
+                <P id ="synopsis_3"></P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6 id="name_4">名字</h6>
+                <P id="synopsis_4">介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6 id="name_5">名字</h6>
+                <P id="synopsis_5"></P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字
+                </div>
+                <div class="line_2_2_copy">
+                  <h6 id="name_6">名字</h6>
+                  <P id="synopsis_6">介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_1">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">2名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_2">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">3名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_3">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">4名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_4">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">5名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_5">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">6名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_6">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">7名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_bottom_left_7">
+          <div class="line_1">
+            <div class ="line_1_1_bg">
+              <div class="line_1_1">8名字</div>
+              <div class="line_1_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_2_bg">
+                <div class="line_1_2">名字</div>
+                <div class="line_1_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_1_3_bg">
+              <div class="line_1_3">名字</div>
+              <div class="line_1_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_1_4_bg">
+              <div class="line_1_4">名字</div>
+              <div class="line_1_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_2">
+            <div class ="line_2_1_bg">
+              <div class="line_2_1">名字</div>
+              <div class="line_2_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_2_bg">
+                <div class="line_2_2">名字</div>
+                <div class="line_2_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_2_3_bg">
+              <div class="line_2_3">名字</div>
+              <div class="line_2_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_2_4_bg">
+              <div class="line_2_4">名字</div>
+              <div class="line_2_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+          <div class="line_3">
+            <div class ="line_3_1_bg">
+              <div class="line_3_1">名字</div>
+              <div class="line_3_1_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_2_bg">
+                <div class="line_3_2">名字</div>
+                <div class="line_3_2_copy">
+                  <h6>名字</h6>
+                  <P>介绍</P>
+                  <button>安装</button>
+                </div>
+            </div>
+            <div class ="line_3_3_bg">
+              <div class="line_3_3">名字</div>
+              <div class="line_3_3_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+            <div class ="line_3_4_bg">
+              <div class="line_3_4">名字</div>
+              <div class="line_3_4_copy">
+                <h6>名字</h6>
+                <P>介绍</P>
+                <button>安装</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="bottom_bottom_rigth">
+          <div>
+            <ul>
+              <li>qq</li>
+              <li>微信</li>
+              <li>腾讯视频</li>
+              <li>qq音乐</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+      </div>
+      <div id ="main_game">
+      <div id="middle">
+        <div id="middle_top">
+          <div><button id="middle_btn_1">必备推荐</button></div>
+          <div><button id="middle_btn_2">榜单排行</button></div>
+        </div>
+        <div id="middle_bottom">
+          <div id="middle_bottom_1">
+            <div id="middle_bottom_left">
+              <div id="middle_bottom_left_1"></div>
+              <div id="middle_bottom_left_2"></div>
+              <div id="middle_bottom_left_3"></div>
+              <div id="middle_bottom_left_4"></div>
+            </div>
+            <div id="middle_bottom_right">
+              <div><button id="middle_bottom_right_btn_1">一</button></div>
+              <div><button id="middle_bottom_right_btn_2">二</button></div>
+              <div><button id="middle_bottom_right_btn_3">三</button></div>
+              <div><button id="middle_bottom_right_btn_4">四</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="right_top">累计下载</div>
+        <div id="right_middle">
+          <div>!!!今日开服!!!</div>
+          <div>!!!本周最热!!!</div>
+        </div>
+        <div id="right_bottom">
+          <div id="right_bottom_1">
+            <a href="https://www.baidu.com">百度一下</a>
+          </div>
+          <div id="right_bottom_2">
+            <a href="https://www.4399.com">4399小游戏</a>
+          </div>
+          <div id="right_bottom_3">
+            <a href="https://www.7k7k.com">7k7k小游戏</a>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="bottom_top">
+          <div id="bottom_top_left">
+            <div><p><button id="bottom_top_left_menu_1">上网必备</button></p></div>
+            <div><p><button id="bottom_top_left_menu_2">游戏必备</button></p></div>
+            <div><p>影音必备</p></div>
+            <div><p>手游PC版</p></div>
+            <div><p>办公必备</p></div>
+            <div><p>热门页游</p></div>
+            <div><p>系统必备</p></div>
+            <div><p>微信小游戏</p></div>
+          </div>
+          <div id="bottom_top_right">
+            <img src="./img/下载.png">
+            下载排行
+          </div>
+        </div>
+        <div id="bottom_bottom">
+          <div id="bottom_bottom_left">
+          <div id="bottom_bottom_left_1">
+            <div id="line_1">
+              <div>
+                <div>
+                  <h6>植物大战僵尸</h6>
+                  <P>一款策略塔防游戏</P>
+                  <button>安装</button>
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <div id="line_2">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div id="line_3">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div id="bottom_bottom_left_2">
+            <div id="line_1">
+              <div>2
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <div id="line_2">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div id="line_3">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          </div>
+          <div id="bottom_bottom_rigth">
+            <div>
+              <ul>
+                <li>qq</li>
+                <li>微信</li>
+                <li>腾讯视频</li>
+                <li>qq音乐</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+      <div id ="main_stock">
+        <div id="main_stock_top">
+        </div>
+        <div id="main_stock_bottom">
+          <div id="main_stock_bottom_line_1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="main_stock_bottom_line_2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="main_stock_bottom_line_3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="main_stock_bottom_line_4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="main_stock_bottom_line_5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div id="main_upgrade">
+        <div id="main_upgrade_top"></div>
+        <div id="main_upgrade_bottom">
+          <div id ="main_upgrade_bottom_1">
+            <div>
+              <img src="./img/谷歌.png">
+              <div id="main_upgrade_bottom_1_1_right">
+                <div>
+                  <b id="b">谷歌浏览器 稳定版</b>
+                  <p id="p_1">(46%的用户已升级)</p>
+                </div>
+                <div>
+                  <p id="p_2">优化深色模式、标签搜索</p>
+                </div>
+              </div>
+            </div>
+            <div><p>大小</p></div>
+            <div><p>安装时间</p></div>
+            <div><button>安装</button></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="main_uninstall">
+        <div id="main_uninstall_top">
+          <div id="main_uninstall_top_left">
+            <ul id = "ul">
+              <li id="lin">全部</li>
+              <li id="lin">推荐卸载</li>
+              <li id="lin">最近安装</li>
+              <li id="lin">Win10</li>
+              <li id="lin">聊天</li>
+              <li id="lin">输入法</li>
+              <li id="lin">浏览器</li>
+              <li id="lin">下载</li>
+              <li id="lin">视频</li>
+              <li id="lin">图片</li>
+              <li id="lin">系统</li>
+              <li id="lin">驱动</li>
+              <li id="lin">办公</li>
+              <li id="lin">游戏</li>
+              <li id="lin">网络</li>
+              <li id="lin">编程</li>
+              <li id="lin">音乐</li>
+              <li id="lin">解压刻录</li>
+              <li id="lin">安全</li>
+              <li id="lin">其他</li>
+            </ul>
+          </div>
+          <div id="main_uninstall_top_right">
+            <button id="main_uninstall_top_right_prev"><img src="./img/上一个.png"></button>
+            <button id="main_uninstall_top_right_next"><img src="./img/下一个.png"></button>
+          </div>
+        </div>
+        <div id="main_uninstall_bottom">
+          <div id="main_uninstall_bottom_apply_1">
+            <div id="main_uninstall_bottom_apply_1_left">
+              <img src="./img/升级.png">
+              <a>
+                <h6>name</h6>
+                <p>简介</p>
+              </a>
+            </div>
+            <diV id="main_uninstall_bottom_apply_1_right">
+              <div>
+                <P>213M</P>
+              </div>
+              <div>
+                <p>安装时间</p>
+              </div>
+              <div>
+                <P>不常用</P>
+              </div>
+              <div>
+                <button>卸载</button>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="cs"></div> -->
+    <!-- You can also require other files to run in this process -->
+    <script src="./jquery-2.1.4.min.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
